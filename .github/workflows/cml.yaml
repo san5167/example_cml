@@ -10,6 +10,7 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          echo $REPO_TOKEN
           pip install -r requirements.txt
           python train.py  # generate plot.png
 
